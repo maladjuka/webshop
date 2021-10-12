@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shopstyle.css" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body >
+    <div class="nav">
+      <div class="logo">
+        <p class="logoshop">Elektroplast</p>
+        <p>Plasticna ambalaza za kozmetiku i kucnu hemiju</p>
+      </div>
+      <ul class="nav-bar">
+        <li><a href="index.html" class="nav-links">Pocetna strana</a></li>
+        <li>
+          <a href="kozmeticka_ambalaza.html" class="nav-links">Prodavnica</a>
+        </li>
+        <li class="cart">
+          <a href="korpa.html">
+            Tvoja korpa<span id="products-in-cart">0</span>
+         </a>
+      </li>
+      
+      </ul>
+    </div>
+    
+               
+    
+    
+        <div class="container-products">
+            <div class="product-header">
+                <h5 class="product-title">Proizvod</h5>
+                <h5 class="price sm-hide">Cena proizvoda</h5>
+                <h5 class="quantity">Kolicina</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div id="products" class="products">
+
+            </div>
+
+            <input type="submit"  value="PORUCI" class="send" id="clearLS">
+
+        </div>
+
+
+
+
+
+
+        <div class="linewrapper">
+                
+          <hr class="line"></hr>
+          <h2>Kontaktirajte nas</h2>
+          <hr class="line"></hr>
+          </div>
+          
+        
+        
+        <div class="contact">
+      
+
+          <p>Elektroplast</p>
+          <label for="email">elektroplastbp@gmail.com</label>
+
+
+
+          <p>Kontakt telefon: 064/10-88-060</p>
+          <P>Adresa: Beli Potok</P>
+          <p>16203, Vucje</p>
+          </div>
+          
+          
+          
+          
+          
+        
+          </div>
+          
+          
+          </form>
+          
+          </div>
+          
+          
+          </div>
+        
+        
+        </div>
+
+
+
+
+
+
+
+        <script src="cartapp2.js"></script>
+
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+
+<script>
+  const byProducts=document.getElementById("clearLS");
+ byProducts.addEventListener('click',() =>{
+
+
+    window.localStorage.clear();
+
+
+    alert('Uspesno ste izvrsili kupvonu');
+    window.location.reload();
+
+
+
+ })
+</script>
+
+
+    </body>
+    </html>
+
+
+  </body>
+</html>
